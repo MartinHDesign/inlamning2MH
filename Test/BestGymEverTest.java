@@ -77,10 +77,14 @@ class BestGymEverTest {
     @Test
     public final void correctInputTest(){
         String mockUserInput = "1234567890";
+        String wrongMockInput = "abc2";
         boolean expectedValue = true;
+        boolean expectedWrongValue = false;
         boolean actualValue = bge.correctInput(mockUserInput);
+        boolean actualWrongValue = bge.correctInput(wrongMockInput);
 
         Assertions.assertEquals(expectedValue,actualValue);
+        Assertions.assertEquals(expectedWrongValue,actualWrongValue);
     }
     @Test
     public final void personExistInDataBaseTest(){
