@@ -62,7 +62,7 @@ public class BestGymEver {
             m.getUserCancelInput();
             System.exit(0);
         }
-        return userInput;
+        return userInput.trim();
     }
 
     public boolean checkIfInputIsNumbers(String userInput) {
